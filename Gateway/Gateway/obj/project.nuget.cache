@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "NkZWn+43SGY=",
+  "success": true,
+  "projectFilePath": "/Users/fomapopov/RiderProjects/KPO_CW_2/Gateway/Gateway/Gateway.csproj",
+  "expectedPackageFiles": [
+    "/Users/fomapopov/.nuget/packages/microsoft.aspnetcore.openapi/8.0.0/microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
+    "/Users/fomapopov/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/fomapopov/.nuget/packages/microsoft.openapi/1.6.23/microsoft.openapi.1.6.23.nupkg.sha512",
+    "/Users/fomapopov/.nuget/packages/swashbuckle.aspnetcore/8.1.2/swashbuckle.aspnetcore.8.1.2.nupkg.sha512",
+    "/Users/fomapopov/.nuget/packages/swashbuckle.aspnetcore.swagger/8.1.2/swashbuckle.aspnetcore.swagger.8.1.2.nupkg.sha512",
+    "/Users/fomapopov/.nuget/packages/swashbuckle.aspnetcore.swaggergen/8.1.2/swashbuckle.aspnetcore.swaggergen.8.1.2.nupkg.sha512",
+    "/Users/fomapopov/.nuget/packages/swashbuckle.aspnetcore.swaggerui/8.1.2/swashbuckle.aspnetcore.swaggerui.8.1.2.nupkg.sha512",
+    "/Users/fomapopov/.nuget/packages/system.io.hashing/8.0.0/system.io.hashing.8.0.0.nupkg.sha512",
+    "/Users/fomapopov/.nuget/packages/yarp.reverseproxy/2.3.0/yarp.reverseproxy.2.3.0.nupkg.sha512",
+    "/Users/fomapopov/.nuget/packages/microsoft.netcore.app.ref/8.0.11/microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/fomapopov/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/fomapopov/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.11/microsoft.netcore.app.host.osx-arm64.8.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

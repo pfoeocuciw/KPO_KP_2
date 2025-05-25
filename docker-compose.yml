@@ -1,0 +1,63 @@
+services:
+  postgres:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER:     postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB:       filestorage
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL","pg_isready -U postgres"]
+      interval: 5s
+      retries: 5
+
+  filestorage:
+    build:
+      context: ./FileStoring
+      dockerfile: Dockerfile
+    ports:
+      - "5001:80"
+    volumes:
+      - storage_data:/app/Storage
+    environment:
+      ConnectionStrings__DefaultConnection: "Host=postgres;Port=5432;Database=filestorage;Username=postgres;Password=postgres"
+    depends_on:
+      postgres:
+        condition: service_healthy
+        
+  fileanalysis:
+    build:
+      context: ./FileAnalysis
+      dockerfile: Dockerfile
+    ports:
+      - "5002:80"
+    environment:
+      ConnectionStrings__DefaultConnection: "Host=postgres;Port=5432;Database=filestorage;Username=postgres;Password=postgres"
+      StorageServiceUrl: "http://filestorage:80"
+      WordCloudApiUrl:   "https://quickchart.io/wordcloud"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      filestorage:
+        condition: service_started
+    
+  gateway:
+    build:
+      context: ./Gateway
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    environment:
+      StorageServiceUrl:  http://filestorage:80
+      AnalysisServiceUrl: http://fileanalysis:80
+    depends_on:
+      - filestorage
+      - fileanalysis
+
+volumes:
+  pgdata:
+  storage_data:

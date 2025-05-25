@@ -1,0 +1,11 @@
+/Users/fomapopov/RiderProjects/FileStorageService/Domain/bin/Debug/net9.0/Domain.deps.json
+/Users/fomapopov/RiderProjects/FileStorageService/Domain/bin/Debug/net9.0/Domain.dll
+/Users/fomapopov/RiderProjects/FileStorageService/Domain/bin/Debug/net9.0/Domain.pdb
+/Users/fomapopov/RiderProjects/FileStorageService/Domain/obj/Debug/net9.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fomapopov/RiderProjects/FileStorageService/Domain/obj/Debug/net9.0/Domain.AssemblyInfoInputs.cache
+/Users/fomapopov/RiderProjects/FileStorageService/Domain/obj/Debug/net9.0/Domain.AssemblyInfo.cs
+/Users/fomapopov/RiderProjects/FileStorageService/Domain/obj/Debug/net9.0/Domain.csproj.CoreCompileInputs.cache
+/Users/fomapopov/RiderProjects/FileStorageService/Domain/obj/Debug/net9.0/Domain.dll
+/Users/fomapopov/RiderProjects/FileStorageService/Domain/obj/Debug/net9.0/refint/Domain.dll
+/Users/fomapopov/RiderProjects/FileStorageService/Domain/obj/Debug/net9.0/Domain.pdb
+/Users/fomapopov/RiderProjects/FileStorageService/Domain/obj/Debug/net9.0/ref/Domain.dll
